@@ -1,0 +1,329 @@
+.carusel{
+    margin: 0 auto;
+    max-width: 1600px;
+    position: relative;
+    overflow: hidden;
+}
+.carusel::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background:rgba(42, 42, 42, 0.45);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.carusel_mane{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 0 16px;
+}
+.carusel_about{
+    line-height: 19px;
+    color: #FFFFFF;
+    max-width: 315px;
+}
+.carusel_text{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 245px;
+    padding: 55px 0 76px;
+}
+.nawigatorMenu a{
+    line-height: 19px;
+    color: #000000;
+    display: inline-block;
+    padding-right: 20px;
+    position: relative;
+    margin: 0 0 10px;
+    
+}
+.nawigatorMenu li{
+    display: inline-block;
+}
+.nawigator{
+    padding: 30px 0 0;
+}
+.nawigatorMenu span{
+    top: 1px;
+    left: 15%;
+    position: relative;
+}
+.menu_siteBar{
+    width: 255px;
+    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+    border-radius: 9px;
+}
+.content_naw, .ansver{
+    width: 1100px;
+    margin: 0 auto;
+}
+.content_page{
+    display: flex;
+    justify-content:space-between;
+}
+.menu_punct{
+    display: none;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #2A2A2A;
+    margin: 10px 0 10px;
+    padding-left: 34px;
+}
+
+.menu_list:hover .menu_punct{
+    display: block;
+    border-bottom: none;
+}
+.menu_sub{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #2A2A2A;
+    padding: 27px 22px 14px;
+    position: relative;
+    padding-right: 59px;
+    display: block;
+    border: 2px solid rgba(42, 42, 42, 0.12);
+}
+.menu_sub:before{
+    content:"";
+    background: url(../img/sprites.png) -88px -38px;
+    width: 14px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    left: 215px;
+    top: 35px;
+}
+.active{
+    position: relative;
+}
+.active::before{
+    content:"";
+    background: url(../img/sprites.png) -88px -38px;
+    width: 14px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    left: 215px;
+    top: 10px;
+}
+.content_gall{
+    max-width: 855px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 255px);
+}
+.desktop_item a{
+    line-height: 208%;
+    color: rgba(42, 42, 42, 0.85);
+}
+.desktop_item{
+    display: none;
+    padding-left: 64px;
+}
+.menu_list_item:hover .desktop_item{
+    display: block;
+    border-bottom: none;
+}
+.left_siteBar li:hover ul{
+    display: block;
+}
+a:hover{
+    color: #F9A43F;
+}
+.check_price{
+    width: 65px;
+    height: 27px;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 9px;
+    text-align: center;
+}
+.price_sub span{
+    line-height: 19px;
+    color: #2A2A2A;
+}
+.start_end{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.check{
+    border-radius: 9px;
+}
+.price_sub{
+    padding: 10px 30px;
+   display: none;
+}
+.liane{
+    border: 1px solid #2A2A2A;
+    background:2A2A2A;
+    position: relative;
+    top: 6px;
+}
+.liene_strong::before, .liene_strong::after{
+    content:'';
+    background: #2A2A2A;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    display: block;
+    position: absolute;
+    
+}
+.liene_strong{
+    margin: 0 0 26px;
+}
+.price_page:hover .price_sub{
+    display: block;
+    
+}
+.check{
+    width: 21px;
+    height: 21px;
+    border: 1px solid #2A2A2A;
+    border-radius: 7px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.price_page p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A2A2A;
+    
+}
+.price_sub_item{
+    display: flex;
+    align-items:center;
+}
+.ages{
+    padding: 10px 30px;
+    display: none;
+}
+.age:hover .ages{
+    display: block;
+    padding: 10px 30px;
+    display: flex;
+    align-items:center;
+}
+.btn_filtr{
+    font-size: 12px;
+    line-height: 14px;
+    color: #2A2A2A;
+    padding: 13px 57px;
+    border: 2px solid #2A2A2A; 
+    text-align: center;
+    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+    border-radius: 9px;
+    display: inline-block;
+    margin: 30px 24px;
+}
+.btn_filtr:hover{
+    box-shadow: 5px 6px 16px rgba(148, 78, 8, 0.36);
+    border:2px solid #F9A43F;
+}
+.person_delet{
+    display: none;
+}
+.delet:hover .person_delet{
+    display: block;
+}
+.liene_strong_num{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ls{
+    margin: 20px 0;
+    padding: 0 30px;
+}
+.content_page_gallery{
+    margin: 64px 0;
+}
+.page_gallery{
+    display: flex;
+    width: 205px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.page_gallery a{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #2A2A2A;
+}
+.activ_page{
+    border: 1px solid #2A2A2A;
+    border-radius: 7px;
+    padding: 2px 6px;
+}
+.page_gallery{
+    position: relative;
+}
+.page_gallery::before{
+    content:'';
+    background: url(../img/sprites.png) 82px -162px;
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: -4px;
+    left: -52px;
+    cursor: pointer;
+}
+.page_gallery::after{
+    content:'';
+    background: url(../img/sprites.png) 111px -162px;
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: -4px;
+    right: -52px;
+    cursor: pointer;
+}
+.h6{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #2A2A2A;
+    padding: 25px 0;
+    position: relative;
+    display: block;
+}
+.h6::before{
+    content:'';
+    background: url(../img/sprites.png) 65px -184px;;
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 34px;
+    top: 14px;
+    right: 18px
+}
+.h6:hover{
+    color:#938989;
+}
+.quethen{
+    border-bottom:2px solid rgba(42, 42, 42, 0.12);
+    padding: 0 10px;
+}
+.ansv_text{
+    max-width: 1000px;
+    display: none;
+    margin: 0 0 20px;
+}
+.quethen span{
+    line-height: 19px;
+    color: #F9A43F;
+    text-decoration: underline;
+}
+.ansver{
+    padding: 0 0 88px;
+}
